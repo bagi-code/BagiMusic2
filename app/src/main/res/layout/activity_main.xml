@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <co.mobiwise.library.InteractivePlayerView
+        android:id="@+id/ipv"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_centerInParent="true"
+        app:imageCover="@drawable/imagetest"
+        app:selectedAction1="@drawable/shuffle_selected"
+        app:selectedAction2="@drawable/like_selected"
+        app:selectedAction3="@drawable/replay_selected"
+        app:unselectedAction1="@drawable/shuffle_unselected"
+        app:unselectedAction2="@drawable/like_unselected"
+        app:unselectedAction3="@drawable/replay_unselected" />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_red"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:text="PLAY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
